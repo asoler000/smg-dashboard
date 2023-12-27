@@ -1,11 +1,11 @@
 {
+	"homepage":"https://asoler000.github.io/smg-dashboard",
 	"name": "vision-ui-dashboard-react",
 	"version": "3.0.0",
 	"private": true,
 	"author": "Creative Tim",
 	"license": "See license in https://www.creative-tim.com/license",
 	"description": "Material UI version of Vision UI Dashboard by Creative Tim",
-	"homepage": "https://demos.creative-tim.com/vision-ui-dashboard-react/#/dashboard",
 	"bugs": {
 		"url": "https://github.com/creativetimofficial/vision-ui-dashboard-react/issues"
 	},
@@ -48,11 +48,11 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
+		"predeploy" : "npm run build",
+		"deploy" : "gh-pages -d build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"homepage": "https://asoler000.github.io/smg-dashboard",
-		"deploy" : "npm run build&&gh-pages -d build",
 		"install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
 	},
 	"eslintConfig": {
